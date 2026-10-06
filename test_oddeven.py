@@ -1,3 +1,4 @@
+import sys 
 from evenodd import even
 
 def test_even():
@@ -7,4 +8,4 @@ def test_odd():
     assert even(7) == "Odd number"
 
 if __name__== "__main__":
-    print("even and odd", even(33))
+    num = int(sys.argv[1])
